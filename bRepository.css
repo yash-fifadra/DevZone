@@ -1,0 +1,551 @@
+@import 'bNormalize.css';
+@import url('https://cdnjs.cloudflare.com/ajax/libs/octicons/8.5.0/build.css');
+*   {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+header {
+    background-color: #24292e;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 6px;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    list-style: none;
+}
+
+header nav ul li {
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 16px;
+}
+.logo-img {
+    padding-right: 2px;
+    height: 60px;
+    vertical-align: middle;
+}
+
+.header-search-bar {
+    padding: 0 8px;
+    height: 28px;
+    width: 300px;
+    background-color: #404448;
+    border-radius: 3px;
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+}
+.header-search-bar input {
+    width: 100%;
+    height: inherit;
+    border: none;
+    border-style: none;
+    outline: none;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 14px;
+    background: inherit;
+}
+.header-search-bar img {
+    display: block;
+}
+
+.octicon-search {
+    fill: rgba(255, 255, 255, 0.75);
+    margin-left: 8px;
+  }
+
+.left-nav {
+    margin: 0 16px;
+    flex: auto;
+}
+
+.nav-icon {
+    fill: white;
+}
+
+.nav-icon-sm {
+    width: 8px;
+
+}
+
+.nav-profile-dropdown-img {
+    width: 20px;
+    height: 20px;
+    display: block;
+    border-radius: 3px;
+}
+
+.right-nav {
+    align-items: center;
+    vertical-align: middle;
+    align-content: center;
+    align-self: center;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link:hover > svg {
+    fill: #bdbfc0;
+}
+
+.nav-link:hover {
+    color: #bdbfc0;
+}
+
+.nav-dropdown {
+    position: relative;
+}
+
+.nav-dropdown > a {
+    display: flex;
+    align-items: center;
+}
+
+.nav-dropdown > a > svg:last-child {
+    margin-left: 4px;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    border-radius: 3px;
+    padding: 5px 0;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    min-width: 160px;
+    z-index: 100;
+    border: 1px solid rgba(27,31,35,.15);
+    box-shadow: 0 3px 12px rgba(27,31,35,.15);
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.dropdown-menu > ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    flex-wrap: nowrap;
+}
+.dropdown-item {
+    width: 100%;
+    padding: 4px 16px;   
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.5;
+    text-decoration: none;
+    color: #2a2f34;
+}
+.dropdown-item:hover {
+    background-color: #0366d6;
+    color: white;
+}
+
+.divider {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+}
+
+.profile-dropdown-status-button {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 12px;
+    padding: 6px 8px;
+}
+
+main    {
+   
+    width: 80%;
+    margin: 0 auto;
+}
+.main-container {
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+.top-menu-container   {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    border-bottom: 1px solid gray;
+    margin-bottom: 2%;
+    padding: 1rem 0;
+}
+svg {
+    margin-right: 0.3rem;
+
+}
+.top-menu-div  {
+    flex-basis: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+.top-menu-divs  {
+flex-basis: 20%;
+display: flex;
+    justify-content: space-between;
+    position: relative;
+   
+}
+.top-menu-divs:after  {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: red;
+    position: absolute;
+    left: 0;
+    bottom: -1rem;
+}
+.br {
+    width: 100%;
+    margin-left: -33.33%;
+    margin-right: -33.33%;
+    border-bottom: 1px solid gray;
+}
+.top-menu   {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+.repo-number    {
+    font-size: 0.6rem;
+    padding: 0.1rem 0.3rem;
+    border-radius: 5px;
+    background: rgb(177, 177, 177);
+    color: black;
+    font-size: 600;
+    margin-left: 0.4rem;
+}
+.left-box   {
+    flex-basis: 25%;
+   
+    padding: 0 1rem;
+  }
+.right-box  {
+    flex-basis: 70%;
+   
+}
+
+.profile-img-div    {
+    flex-basis: 90%;
+    margin: 0 auto;
+  
+   /* width: 80%; */
+}
+.profile-img  {
+    max-height: auto;
+    max-width: 100%;
+    border-radius: 50%;
+    display: block;
+}
+.full-name  {
+    font-size: 1rem;
+    line-height: 2rem;
+    font-weight: 700;
+}
+.profile-name   {
+    font-size: 1rem;
+    color: gray;
+}
+.profile-button {
+    width: 90%;
+    background: rgb(223, 219, 219);
+    text-align: center;
+    padding: 5px 0;
+    font-size: 1rem;
+    color: black;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-weight: 600;
+    margin: 1.5rem 0;
+    cursor: pointer;
+}
+
+.repo-filter-section    {
+    display: flex;
+    justify-content: space-between;
+    margin: 4% 0;
+
+}
+
+.search-repo    {
+    flex-basis: 60%;
+}
+.find-repo  {
+    border: 1px solid grey;
+    border-radius: 5px;
+    width: 100%;
+    background: none;
+    padding: 5px 1rem;
+    font-size: 0.8rem;
+}
+.repo-filter    {
+    flex-basis: 10%;
+}
+.language-filter    {
+    flex-basis: 15%;
+}
+.repo-btn {
+    background: rgb(231, 231, 231);
+    display: flex;
+    /* justify-content: space-between; */
+    width: 100%;
+    font-size: 0.8rem;
+    border: 1px solid rgb(110, 106, 106);
+    padding: 5px 6px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 500;
+    transition: .2s;
+    cursor: pointer;
+}
+.repo-btn:hover {
+    outline: none;
+    background: rgb(110, 105, 105);
+}
+.select {
+    background: none;
+    color: #333333;
+    border: none;
+    width: 80%;
+    font-size: 0.8rem;
+    font-weight: 600;
+    /* appearance: none;
+    -webkit-appearance: none; */
+}
+.select:focus
+.select:hover   {
+    outline: none;
+    border: 1px solid #333333;
+}
+.select option  {
+    background: #ffff;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+.new-btn    {
+    background: rgb(38, 129, 38);
+    width: 100%;
+    color: #ffff;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 5px 14px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: none;
+    border: 1px solid green;
+    cursor: pointer;
+}
+.repo-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    /* border-top: 0.2px solid gray; */
+   
+    box-shadow: 0 4px 2px -2px gray;
+}
+.repo-section   {
+    flex-basis: 30%;
+    border: none;
+  
+}
+.star-box   {
+    position: relative;
+    flex-basis: 30%;
+   
+}
+.project-name   {
+    font-size: 1.2rem;
+    color: blue;
+    text-align: left;
+    line-height: 2rem;
+    font-weight: 700;
+}
+.forked {
+    font-size: 0.7rem;
+    color: gray;
+}
+.project-details    {
+    font-size: 0.9rem;
+    color: gray;
+    line-height: 2rem;
+}
+.project-label-div  {
+    display: flex;
+    justify-content: space-between;
+
+}
+.project-language, .project-date   {
+    font-size: 0.7rem;
+    color: gray;
+    line-height: 1.5rem;
+}
+
+.star-btn   {
+    font-size: 0.8rem;
+    font-weight: 500;
+    border: 1px solid gray;
+    background: rgb(231, 231, 231);
+    border-radius: 5px;
+    padding: 5px 17px;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+#star-icon  {
+    margin-right: 0.5rem;
+}
+
+
+/* Media Query */
+@media (max-width: 799px)   {
+    #toggle-nav {
+        display: block;
+    }
+nav ul  {
+        position: fixed;
+        width: 100%;
+        height: 30vh;
+        background:  rgb(0, 6, 34);
+        top: 4.5rem;
+        left: -100%;
+        text-align: center;
+        transition: .5s;
+        z-index: 10;
+    }
+    
+nav ul li   {
+    display: block;
+    margin: 10px 0;
+    line-height: 20px;
+   
+}
+#notification-icon  {
+    margin-left: auto;
+    justify-self: self-end;
+}
+
+#ham-menu:checked ~ ul{
+    left: 0;
+}
+#ham-menu:checked ~ label #toggle-nav {
+    display: none;
+}
+#ham-menu:checked ~ label #toggle-nav2 {
+    display: block;
+}
+    
+    
+    
+    /* nav {
+       
+        flex-direction: column;
+    }
+    ul  {
+        flex-direction: column;
+    } */
+    .main-container {
+        flex-direction: column;
+    }
+
+    main    {
+        width: 95%;
+    }
+    .top-menu-container   {
+        width: 95%;
+       
+    }
+    .left-box   {
+        flex-basis: 25%;
+      
+        padding: 0 1rem;
+      }
+    .profile-img-div    {
+        flex-basis: 30%;
+        border: none;
+        
+      
+       /* width: 80%; */
+    }
+    .profile-img  {
+        max-height: 7rem;
+        max-width: 40%;
+        flex-basis: 40%;
+        border-radius: 50%;
+        display: inline-block;
+    }
+    .profile-name   {
+        float: left;
+        flex-basis: 40%;
+    }
+    .profile-button {
+        width: 100%;
+        
+    }
+    
+    .repo-filter-section    {
+        display: flex;
+        justify-content: space-between;
+        margin: 4% 0;
+    }
+    .search-repo    {
+        flex-basis: 95%;
+        margin: 0 auto;
+    }
+    .find-repo  {
+        border: 1px solid grey;
+        border-radius: 5px;
+        width: 100%;
+        background: none;
+        padding: 5px 1rem;
+        font-size: 0.8rem;
+    }
+    .repo-filter    {
+        display: none;
+    }
+    .language-filter    {
+        display: none;
+    }
+    
+
+   
+    .repo-section   {
+        flex-basis: 60%;
+       
+    }
+    .star-box   {
+        position: relative;
+        flex-basis: 30%;
+    }
+    .project-name   {
+        font-size: 1rem;
+       
+        line-height: 1rem;
+        font-weight: 600;
+    }
+    .project-details    {
+        font-size: 0.8rem;
+        line-height: 1.4rem;
+    }
+    .project-language, .project-date   {
+        font-size: 0.7rem;
+        color: gray;
+        line-height: 1.5rem;
+    }
+    
+
+}

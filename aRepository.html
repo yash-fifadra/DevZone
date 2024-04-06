@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repositories</title>
+    <link rel="stylesheet" href="bRepository.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/74091f2b8e.js"></script>
+    <script src="cMain.js" defer></script>
+</head>
+<body>
+    
+    <header>
+       
+        <nav class="left-nav">
+            <ul>
+                <li>
+                    <div id="header-search-bar">
+                        
+                        <img class="logo-img" src="dlogo.png" alt="">
+
+                        <input type="text" id="nav-search-field" placeholder="Search or jump to...">
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-search">
+                            <path d="M10.68 11.74a6 6 0 0 1-7.922-8.982 6 6 0 0 1 8.982 7.922l3.04 3.04a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215ZM11.5 7a4.499 4.499 0 1 0-8.997 0A4.499 4.499 0 0 0 11.5 7Z"></path>
+                        </svg>
+                       
+                    </div>
+                </li>
+                <li><a href="" class="nav-link">Pull requests</a></li>
+                <li><a href="" class="nav-link">Issues</a></li>
+                <li><a href="aCommunity.html" class="nav-link">Communitys</a></li>
+                <li><a href="aRepository.html" class="nav-link">Explore Opensource </a></li>
+                <li><a href="aProblemoftheday.html" class="nav-link">Problem of the Day </a></li>
+            </ul>
+        </nav>
+        <nav class="right-nav">
+            <ul>
+                <li>
+                    <div class="nav-dropdown">
+                        <a href="" class="nav-link">
+                            <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16"><path fill-rule="evenodd" d="M14 12v1H0v-1l.73-.58c.77-.77.81-2.55 1.19-4.42C2.69 3.23 6 2 6 2c0-.55.45-1 1-1s1 .45 1 1c0 0 3.39 1.23 4.16 5 .38 1.88.42 3.66 1.19 4.42l.66.58H14zm-7 4c1.11 0 2-.89 2-2H5c0 1.11.89 2 2 2z"/></svg>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="nav-dropdown">
+                        <a href="#" id="nav-dropdown-add-icon" class="nav-link">
+                            <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16"><path fill-rule="evenodd" d="M12 9H7v5H5V9H0V7h5V2h2v5h5v2z"/></svg>
+                            <svg class="nav-icon nav-icon-sm" xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16"><path fill-rule="evenodd" d="M0 5l6 6 6-6H0z"/></svg>
+                        </a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <a href="" class="dropdown-item">New repository</a>
+                                <a href="" class="dropdown-item">Import repository</a>
+                                <a href="" class="dropdown-item">New gist</a>
+                                <a href="" class="dropdown-item">New organisation</a>
+                                <a href="" class="dropdown-item">New Project</a>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="nav-dropdown">
+                        <a href="#" id="nav-dropdown-profile" class="nav-link">
+                            <img class="nav-profile-dropdown-img" src="duser4.jpg">
+                            <svg class="nav-icon nav-icon-sm" xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16"><path fill-rule="evenodd" d="M0 5l6 6 6-6H0z"/></svg>
+                        </a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <a href="" class="dropdown-item">
+                                    Signed in as
+                                    <span style="font-weight: bold">yash995862</span>
+                                </a>
+                                <span class="divider"></span>
+                                <a href="" class="dropdown-item">
+                                    <button class="profile-dropdown-status-button">
+                                        <span>😃</span>
+                                        <span>Set status</span>
+                                    </button>
+                                </a>
+                                <span class="divider"></span>
+                                <a href="aProfile.html" class="dropdown-item">Your profile</a>
+                                <a href="aRepository.html" class="dropdown-item">Your repositories</a>
+                                <a href="aRepository.html" class="dropdown-item">Your projects</a>
+                                <a href="aProblemoftheday.html" class="dropdown-item">Your stars</a>
+                                <a href="aProblemoftheday.html" class="dropdown-item">Your tasks</a>
+                                <span class="divider"></span>
+                                <a href="" class="dropdown-item">Help</a>
+                                <a href="" class="dropdown-item">Settings</a>
+                                <a href="index.html" class="dropdown-item">Sign out</a>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+<main>
+        
+           
+       
+
+        <!-- Main page  -->
+        <section class="main-container">
+            
+
+           
+                <!-- <div class="br">
+
+                </div> -->
+             </section>
+                <!-- Search and filter field -->
+
+            <section class="repo-filter-section">
+                <div class="search-repo">
+                    <input type="text" placeholder="Find a Repository..." class="find-repo">
+                </div>
+                <div class="repo-filter">
+                    <button class="repo-btn">Type:
+
+                        <!-- select body -->
+                        <select class="select">
+                            <!-- <option disabled selected></option> -->
+                            <option value="all">All</option>
+                            <option value="public">Public</option>
+                            <option value="private">Private</option>
+                            <option value="sources">Sources</option>
+                            <option value="forks">Forks</option>
+                        </select>
+                    </button>
+                </div>
+                <div class="language-filter">
+                    <button class="repo-btn">Language:
+                        <!-- select body -->
+                        <select class="select">
+                            <!-- <option disabled selected></option> -->
+                            <option value="all">All</option>
+                            <option value="public">Html</option>
+                            <option value="private">Javascript</option>
+                            <option value="sources">Css</option>
+                            <option value="forks">PHP</option>
+                        </select>
+                    </button>
+                </div>
+                
+            </section>
+
+            <!-- Repository section -->
+
+            <!-- Project-one -->
+            <div class="repo-container">
+                <section class="repo-section">
+                <h2 class="project-name">Fitme</h2>
+                <p class="project-details">A fitness app landing page</p>
+                
+                <!-- Project label div -->
+                <div class="project-label-div">
+                    <p class="project-language">HTML</p>
+                    <p class="project-date">Updated on Oct 26</p>
+                </div>
+            </section>
+
+            <!-- Star box -->
+            <div class="star-box">
+                <button class="star-btn"><i class="fa fa-star-o" aria-hidden="true" id="star-icon"></i>Star</button>
+            </div>
+            </div>
+
+            <!-- Project-two -->
+            <div class="repo-container">
+                <section class="repo-section">
+                <h2 class="project-name">R-Aportal</h2>
+                <p class="forked">Forked from Davidtariq96/R-Aportal</p>
+                <p class="project-details">A recruiting portal for employers</p>
+                
+                <!-- Project label div -->
+                <div class="project-label-div">
+                    <p class="project-language">React Js</p>
+                    <p class="project-date">Updated on Sept 25</p>
+                </div>
+            </section>
+
+            <!-- Star box -->
+            <div class="star-box">
+                <button class="star-btn"><i class="fa fa-star-o" aria-hidden="true" id="star-icon"></i>Star</button>
+            </div>
+            </div>
+
+            <!-- Project-three -->
+            <div class="repo-container">
+                <section class="repo-section">
+                <h2 class="project-name">Coursera-mod5-solution</h2>
+                <p class="project-details">My coursera module 5 solution</p>
+                
+                <!-- Project label div -->
+                <div class="project-label-div">
+                    <p class="project-language">Javascript</p>
+                    <p class="project-date">Updated on Sept 13</p>
+                </div>
+            </section>
+
+            <!-- Star box -->
+            <div class="star-box">
+                <button class="star-btn"><i class="fa fa-star-o" aria-hidden="true" id="star-icon"></i>Star</button>
+            </div>
+            </div>
+
+            <!-- Project-four -->
+            <div class="repo-container">
+                <section class="repo-section">
+                <h2 class="project-name">Coursera-mod4-solution</h2>
+                <p class="project-details">a solution to coursera coding assignment</p>
+                
+                <!-- Project label div -->
+                <div class="project-label-div">
+                    <p class="project-language">Javascript</p>
+                    <p class="project-date">Updated on Sept 4</p>
+                </div>
+            </section>
+
+            <!-- Star box -->
+            <div class="star-box">
+                <button class="star-btn"><i class="fa fa-star-o" aria-hidden="true" id="star-icon"></i>Star</button>
+            </div>
+            </div>
+
+            <!-- Project-five -->
+            <div class="repo-container">
+                <section class="repo-section">
+                <h2 class="project-name">Coursera-mod3-solution</h2>
+                <p class="project-details">a solution to coursera coding assignment</p>
+                
+                <!-- Project label div -->
+                <div class="project-label-div">
+                    <p class="project-language">HTML</p>
+                    <p class="project-date">Updated on Aug 27</p>
+                </div>
+            </section>
+
+            <!-- Star box -->
+            <div class="star-box">
+                <button class="star-btn"><i class="fa fa-star-o" aria-hidden="true" id="star-icon"></i>Star</button>
+            </div>
+            </div>
+
+            <!-- Project-six -->
+            <div class="repo-container">
+                <section class="repo-section">
+                <h2 class="project-name">Cool sign up</h2>
+               
+                <p class="forked">Forked from cooljasonmelton/coolsignup</p>
+                
+                <!-- Project label div -->
+                <div class="project-label-div">
+                    <p class="project-language">Javascript</p>
+                    <p class="project-date">Updated on Aug 15</p>
+                </div>
+            </section>
+
+            <!-- Star box -->
+            <div class="star-box">
+                <button class="star-btn"><i class="fa fa-star-o" aria-hidden="true" id="star-icon"></i>Star</button>
+            </div>
+            </div>
+
+            <!-- Project-seven -->
+            <div class="repo-container">
+                <section class="repo-section">
+                <h2 class="project-name">World-clock-web-app</h2>
+                <p class="forked">Forked from Team-Javascript-F-Wejapa/World-clock-web-app</p>
+               
+                
+                <!-- Project label div -->
+                <div class="project-label-div">
+                    <p class="project-language">Javascript</p>
+                    <p class="project-date">Updated on Aug 27</p>
+                </div>
+            </section>
+
+            <!-- Star box -->
+            <div class="star-box">
+                <button class="star-btn"><i class="fa fa-star-o" aria-hidden="true" id="star-icon"></i>Star</button>
+            </div>
+            </div>
+
+
+            </div>
+           
+        </section>
+    </main>
+</body>
+</html>
